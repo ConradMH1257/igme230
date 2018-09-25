@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    
+}
+header{
+    width: 100%;
+    background-color: #e5e5e5;
+    padding: 8px;
+}
+article{
+    width: 100%;
+    float: left;
+    
+}
+aside{
+    width: 100%;
+}
+h1,h2,nav{
+    text-align: center;
+}
+nav{
+    overflow: auto;
+}
+image
+{
+    max-width:100%;
+}
+h3,nav a{
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top:7px;
+    width: 100%;
+    display:block;
+}
+aside{
+    padding: 15px;
+    margin-top: 7px;
+    background-color: #e5e5e5;
+}
+aside,nav{
+    float:left;
+    width: 20%;
+}
+

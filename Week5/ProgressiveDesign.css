@@ -8,9 +8,7 @@ header{
     padding: 8px;
 }
 article{
-    width: 100%;
-    float: left;
-    
+    width: 100%;    
 }
 aside{
     width: 100%;
@@ -37,8 +35,17 @@ aside{
     margin-top: 7px;
     background-color: #e5e5e5;
 }
-aside,nav{
-    float:left;
-    width: 20%;
+@media screen and(min-width: 620px)
+{
+    aside,nav{
+        float:left;
+        width: 20%;
+    }
+    article
+    {
+        float: left;
+        width: 60%;
+        padding:20px;
+    }
 }
 

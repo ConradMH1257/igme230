@@ -13,7 +13,8 @@ header{
 }
 html{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: silver;    
+    background-color: silver;  
+    box-shadow: 0 0 0 10px #655;  
 }
 p{
     word-wrap: break-word;

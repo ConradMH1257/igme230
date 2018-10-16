@@ -5,6 +5,7 @@ nav{
     padding-right: 10px;
     float: right;
     max-width: 200px;
+    background-color: orange;
 }
 header{
     padding-left: 100px;
@@ -14,6 +15,7 @@ header{
 html{
     font-family: Arial, Helvetica, sans-serif;    
     background-color: silver;       
+    
 }
 p{
     word-wrap: break-word;
@@ -48,7 +50,7 @@ body,html{
 .bg{
     background-image: url("Tombstone.png");
     height: 100%;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }

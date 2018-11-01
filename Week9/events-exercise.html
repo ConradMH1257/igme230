@@ -51,6 +51,20 @@
 /* Write your code here! */
 
 		let response = document.querySelector("#info");
+		let butt = document.querySelector("#colorform button");
+		let form = document.querySelector("#colorform legend");
+		let rad = document.querySelectorAll(`input[name = "colorGroup"]`);
+		for(let button of rad)
+		{
+			button.addEventListener("click", function(){
+				response.innerHTML = `You picked the Color ${this.value}`;
+			})
+		}
+		butt.onClick = function(e){
+			let color = document.querySelector(`input[name = "colorGroup"]:checked`).value;
+			response.innerHTML = `Your Final Answer IS ${color}`;
+			form.style.color = color;
+		}
 </script>
 </body>
 </html>

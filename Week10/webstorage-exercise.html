@@ -61,16 +61,20 @@
     
     // if we find a previously set color value, display it
     if (storedColor) {  
-        //Uses the users selected color 
-        //found the code in w3Schools
-        document.body.style.background = storedColor;      
+         
         colorSelect.querySelector(`option[value='${storedColor}']`).selected = false;   //changed from true to false     
+        document.body.style.background = storedColor;   
     }
 
     /* This part of the script is triggered by user actions  */
     // when the user changes their name or color, update localStorage
     nameField.onchange = e => { localStorage.setItem(nameKey, e.target.value); };
-    colorSelect.onchange = e => { localStorage.setItem(colorKey, e.target.value); };
+    colorSelect.onchange = e => { 
+        localStorage.setItem(colorKey, e.target.value); 
+        //Uses the users selected color 
+        //found the code in w3Schools
+        document.body.style.background = storedColor;         
+        };
 
     
 </script>

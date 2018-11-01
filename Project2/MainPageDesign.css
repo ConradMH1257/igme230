@@ -1,9 +1,11 @@
 html{
     background-color: #28464b;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
     border: 5px solid #e8c547;
     text-align: center;
 }
-#ArtPhotos{
+.Art{
     align-items: left;
+    background-color: #823200;
 }

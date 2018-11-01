@@ -73,7 +73,8 @@
         localStorage.setItem(colorKey, e.target.value); 
         //Uses the users selected color 
         //found the code in w3Schools
-        document.body.style.background = storedColor;         
+        //document.body.style.background = colorKey;         
+        document.body.style.background = localStorage.storedColor.value;
         };
 
     

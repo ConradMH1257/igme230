@@ -3,7 +3,7 @@ html{
     background-color: #28464b;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5em;
-    border: 5px solid #e8c547;
+    border: 10px solid #e8c547;
     text-align: center;
 }
 /*Call for the artpage to set stuff to the left*/
@@ -11,6 +11,7 @@ html{
     align-items: left;
     background-color: #823200;
 }
+/*ArtPage CSS*/
 .seto, .sett, .setth, .setf, .setfi{
     word-wrap: break-word;
     background-color: #98AFC7;
@@ -21,4 +22,114 @@ html{
     margin-left: 150px;
     margin-right: 150px;
 }
+/*MainPage CSS*/
+.HomePG{
+    margin-top: 120px;
+    margin-bottom: 190px;
+}
+/*Looked at w3schools to get a reminder for the code*/
+/*MainPage CSS for the picture*/
+.Conrad{
+    border-radius: 50%;
+}
+
+/*Got the Code from w3Schools*/
+.Nav{
+    overflow: hidden;
+    background-color: black;
+    margin-left: 600px;
+    margin-right: 685px;
+    align-content: center;
+}
+.Nav a{
+    float: left;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+.Nav a:hover{
+    background-color: #bb4430;
+}
+.Mainpg{
+    Border: 20px solid #048a81;
+}
+/************************/
+
+.Nav2{
+    overflow: hidden;
+    background-color: black;
+    margin-left: 650px;
+    margin-right: 648px;
+    align-content: center;
+}
+.Nav2 a{
+    float: left;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+.Nav2 a:hover{
+    background-color: #bb4430;
+}
+
+.Nav3{
+    overflow: hidden;
+    background-color: black;
+    margin-left: 650px;
+    margin-right: 683px;
+    align-content: center;
+}
+.Nav3 a{
+    float: left;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+.Nav3 a:hover{
+    background-color: #bb4430;
+}
+
+.Nav4{
+    overflow: hidden;
+    background-color: black;
+    margin-left: 750px;
+    margin-right: 716px;
+    align-content: center;
+}
+.Nav4 a{
+    float: left;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+.Nav4 a:hover{
+    background-color: #bb4430;
+}
+
+/*About me and Resume*/
+.reback{
+    background-color: #98AFC7; 
+}
+/*Link from the project wbesite that Lawley gave*/
+@page{
+    size: 5.5in
+    8.5in;
+}
+
+/* Wanted to have the animated buttons but did not have time to add it to my page
+@keyframes spin{
+    to{transform: rotate(1turn);}
+}
+.artic{
+    animation: spin 3s infinite linear;
+    transform-origin: 50% 150px;
+}*/
 /*grey blue #98AFC7*/

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #Stuff, #Stuff2{
+            background-color:blueviolet;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!--three.js-->
+    <button id="show">Show</button> <button id="hide">Hide</button>
+    <div id="Stuff">
+        Some cool stuff
+    </div>
+    <div id="Stuff2">
+            Some cool stuff2
+        </div>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#Stuff").hide();
+            });
+            $("#show").click(function(){
+                $("#Stuff").show();
+            });
+        });
+    </script>
+</body>
+</html>

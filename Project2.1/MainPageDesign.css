@@ -1,5 +1,6 @@
 /*Main format for all the webpages*/
 html{
+    display: grid;
     background-color: #28464b;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5em;
@@ -11,6 +12,7 @@ html{
     align-items: left;
     background-color: #823200;
 }
+
 /*ArtPage CSS*/
 .seto, .sett, .setth, .setf, .setfi{
     word-wrap: break-word;
@@ -30,6 +32,7 @@ html{
 /*Looked at w3schools to get a reminder for the code*/
 /*MainPage CSS for the picture*/
 .Conrad{
+    border: solid black;
     border-radius: 50%;
 }
 
@@ -38,14 +41,14 @@ html{
     overflow: hidden;
     background-color: black;
     margin-left: 600px;
-    margin-right: 685px;
+    margin-right: 600px;
     align-content: center;
 }
 .Nav a{
-    float: left;
+    display: grid;
+    justify-content: center;
     font-size: 24px;
     color: white;
-    text-align: center;
     padding: 14px 24px;
     text-decoration: none;
 }
@@ -53,7 +56,11 @@ html{
     background-color: #bb4430;
 }
 .Mainpg{
-    Border: 20px solid #048a81;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    
 }
 /************************/
 

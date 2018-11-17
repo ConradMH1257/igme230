@@ -22,9 +22,14 @@
             margin: 0;
         }
         nav{
-            display: grid;
-            justify-items: center;
+            
             background-color: white;
+            height: 180px;
+            width: 150px;
+            
+        }
+        #MenuBar{
+            background-color:beige;
         }
     </style>
 </head>
@@ -33,10 +38,18 @@
         <h1>This is a fun page</h1>
     </header>
     <nav>
-        <div id="MenuBar">Hover to Close Menu</div>
+        <div id="MenuBar">Click to Close Menu</div>
         <div id="menu">
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=rmRUgfkvnbg">Thanksgiving Fun</a></li>
+                    <li><span class="submenu">Click Me</span>
+                        <ol class="SubMenu">
+                            <li>This</li>
+                            <li>is</li>
+                            <li>a</li>
+                            <li>SubMenu</li>
+                        </ol>
+                    </li>
                 </ul>
             </div>
     </nav>
@@ -366,10 +379,13 @@
 
     <script>
             
-            $("#MenuBar").hover(function () {
-                $("#close").toggle();
+            $("#MenuBar").click(function () {
                 $("#menu").slideToggle("slow");
             });
+            $(".submenu").click(function() {
+            $(this).next(".SubMenu").toggle();
+        });
+           
     
     </script>
 </body>

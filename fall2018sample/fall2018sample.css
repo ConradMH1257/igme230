@@ -13,7 +13,7 @@ html {
 }
 
 html,
-body {
+body,.wrapper {
     padding: 0;
     margin: 0;
 }
@@ -44,7 +44,7 @@ body{
     max-width: 1200px;
     min-height: 100vh;
 
-    grid-template-rows: 4rem, 1fr, 1fr;
+    grid-template-rows: 4rem, auto, auto;
     grid-template-columns: 400px, auto, 200px;
 
 }
@@ -64,11 +64,17 @@ aside{
 .menuitem{
     background-color: white;
     margin: 0 auto;
+    border: 1px solid  #86af49;
     padding: 0;
 }
+
 .submenu{
     background-color: silver;
     margin: 0 auto;
-    padding: 0;
+    padding-left: .25rem;
+    display: none;    
+}
+ul{
+    list-style-type: none;
 }
 

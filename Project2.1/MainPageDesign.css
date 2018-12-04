@@ -1,11 +1,11 @@
 /*Main format for all the webpages*/
 html{
     display: grid;
-    background-color: #28464b;
+    background-color: #d1c6ad;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5em;
-    border: 10px solid #e8c547;
-    text-align: center;
+    border: 10px solid black;
+    /*efefef*/
 }
 /*Call for the artpage to set stuff to the left*/
 .Art{
@@ -15,20 +15,19 @@ html{
 
 /*ArtPage CSS*/
 .seto, .sett, .setth, .setf, .setfi{
+    display: flex;
+    justify-content: center;
     word-wrap: break-word;
     background-color: #98AFC7;
     box-align: center;
-    max-width: 500px;
-    padding-left: 600px;
-    padding-right: 600px;
-    margin-left: 150px;
-    margin-right: 150px;
+    
 }
 /*MainPage CSS*/
 
 /*Looked at w3schools to get a reminder for the code*/
 /*MainPage CSS for the picture*/
 .Conrad{
+    
     border: solid black;
     border-radius: 50%;
 }
@@ -59,6 +58,10 @@ html{
     justify-content: center;
     
 }
+
+
+
+
 /************************/
 
 .Nav2{
@@ -121,6 +124,10 @@ html{
 .Nav4 a:hover{
     background-color: #bb4430;
 }
+
+
+
+
 
 /*About me and Resume*/
 .reback{

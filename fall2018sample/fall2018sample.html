@@ -59,9 +59,12 @@
     <script src="fall2018sample.js"></script>
     <script>
         $(".menuitem").click(function () {
-                $(".submenu").slideToggle("slow");
+            $(this).next(".submenu").slideToggle("slow");
+                //$(".submenu").slideToggle("slow");
             });
 
+            let content = "content1.txt";
+            $("#content").load(content);S
     </script>
 
 </body>

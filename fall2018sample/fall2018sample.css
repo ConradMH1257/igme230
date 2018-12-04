@@ -44,8 +44,8 @@ body{
     max-width: 1200px;
     min-height: 100vh;
 
-    grid-template-rows: 4rem, auto, auto;
-    grid-template-columns: 400px, auto, 200px;
+    grid-template-rows: 4rem, 1fr, 1fr;
+    grid-template-columns: 1fr, 2fr, 1fr;
 
 }
 header{

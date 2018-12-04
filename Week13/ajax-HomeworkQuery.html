@@ -63,9 +63,12 @@
         <form>
             <label for="verse-choose">Choose a verse</label>
             <select id="verse-choose" name="verse-choose">
-                <option value="verse1-2.txt">Verse 1-2</option>
-                <option value="verse3-4.txt">Verse 3-4</option>
-                <option value="verse5-6.txt">Verse 5-6</option>
+                <option value="verse1">Verse 1</option>
+                <option value="verse2">Verse 2</option>
+                <option value="verse3">Verse 3</option>
+                <option value="verse4">Verse 4</option>
+                <option value="verse5">Verse 5</option>
+                <option value="verse6">Verse 6</option>
             </select>
         </form>
 
@@ -77,26 +80,18 @@
     </div>
     <script>
         'use strict';
-        let verseChoose = document.querySelector('select'); // the select menu
-        let poemDisplay = document.querySelector('#selectedverse');  // the space for the verse to display
-        let verse = "verse1-2.txt" ; // the chosen verse; initialize with first menu option
+        let poem = ("poem.txt");  // sets default verse element
+        let verse = ("verse1");  
 
-        function updateVerse(verse) {
-            let verseRequest = new XMLHttpRequest();  // defines a specific request
-            verseRequest.open('GET', verse);  // specifies what to do when request is sent
-            verseRequest.responseType = 'text'; // specifies that the files should be treated as text
-            verseRequest.onload = function () {  // specifies what to do when file is loaded
-                poemDisplay.innerHTML = verseRequest.response;  // place the response text in the selected element
-            };
-            verseRequest.send(); // actually sends the request
-        };
+        let verseString = `${poem} #${verse}`;
 
-        verseChoose.onchange = function () {
-            verse = verseChoose.value;
-            updateVerse(verse);
-        };
-        verseChoose.value = verse; // shows initial menu option
-        updateVerse(verse);  // shows intial content
+        $("#verse-choose").val(verse); // changes menu option to default
+        $("#selectedverse").load(verseString);   // retrieves only default element
+
+        $("#verse-choose").change(function() {
+            verseString = $(this).val();
+            $("#selectedverse").load(verseString); 
+        });
     </script>
 </body>
 

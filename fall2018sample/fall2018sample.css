@@ -44,7 +44,31 @@ body{
     max-width: 1200px;
     min-height: 100vh;
 
-    grid-template-rows: 4rem,;
-    grid-template-columns: 400px;
+    grid-template-rows: 4rem, 1fr, 1fr;
+    grid-template-columns: 400px, auto, 200px;
+
+}
+header{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;    
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+aside{
+  grid-column-start: 1;  
+  grid-column-end: 1; 
+}
+.menuitem{
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+.submenu{
+    background-color: silver;
+    margin: 0 auto;
+    padding: 0;
 }
 

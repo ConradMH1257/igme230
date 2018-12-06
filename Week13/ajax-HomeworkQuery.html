@@ -92,8 +92,9 @@
         verseString = `${poem} #${verse}`; //takes in the new pick and loads it into the versestring
 
         $("#verse-choose").change(function() {//places the pick into the file
-            verseString = $(this).val();
-            verseString = $("#selectedverse").load(verseString); 
+            verse = $(this).val();
+            verseString = `${poem} #${verse}`;
+            $("#selectedverse").load(verseString); 
         });
     </script>
 </body>

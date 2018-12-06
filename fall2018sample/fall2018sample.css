@@ -117,6 +117,7 @@ ul{
     }
     #wrapper > nav{
         grid-area: nav;
+        width: 450px;
     }
     #wrapper > footer{
         grid-area: foot;

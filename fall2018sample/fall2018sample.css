@@ -37,37 +37,55 @@ nav, aside {
 /**************
 Your Formatting
 ***************/
-
-body{
+#wrapper{
     display: grid;
+
     width: 90vw;
     max-width: 1200px;
-    min-height: 100vh;
+    height: 800px; 
 
-    grid-template-rows: 4rem, 1fr, 1fr;
-    grid-template-columns: 1fr, 2fr, 1fr;
+    padding: 100px;
+    grid-template-rows: 4rem, 1fr, 3rem;
+    grid-template-columns: 1fr, 2fr, 200px;   
+}
 
+header{  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 1/4;           
 }
-header{
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;    
-}
-footer{
+article {           
+    grid-row: 2/4;
+    grid-column: 2/3;    
+}   
+footer {    
     display: flex;
     justify-content: center;
-}
-aside{
-  grid-column-start: 1;  
-  grid-column-end: 1; 
-}
-.menuitem{
-    background-color: white;
-    margin: 0 auto;
-    border: 1px solid  #86af49;
+    align-items: center;
+    grid-row: 3/4;
+    grid-column: 4/-4;    
     padding: 0;
 }
-
+aside{            
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    grid-row: 2/4;
+    grid-column: 1/2;           
+}
+nav {    
+    grid-row: 2/4;
+    grid-column: 3/4;  
+    width: 200px;
+}
+.menuitem{
+    background-color:white;
+    margin:0;
+    border: 1px solid #86af49;
+}
 .submenu{
     background-color: silver;
     margin: 0 auto;
@@ -77,4 +95,51 @@ aside{
 ul{
     list-style-type: none;
 }
+
+@media screen and (max-width: 600px)
+{
+    #wrapper{
+        display: grid;
+        grid-template-areas: "head"
+                             "nav"
+                             "main"
+                             "side"
+                             "foot";
+    }
+    #wrapper > header{
+        grid-area: head;   
+    }
+    #wrapper > aside{
+        grid-area: side;
+    }
+    #wrapper > article{
+        grid-area: main;
+    }
+    #wrapper > nav{
+        grid-area: nav;
+    }
+    #wrapper > footer{
+        grid-area: foot;
+    }
+}
+
+/*#wrapper > header{
+    grid-area: head;   
+}
+#wrapper > aside{
+    grid-area: side;
+}
+#wrapper > article{
+    grid-area: main;
+}
+#wrapper > nav{
+    grid-area: nav;
+}
+#wrapper > footer{
+    grid-area: foot;
+}
+
+    grid-template-areas: "head head head"
+                         "side main nav"
+                         "foot foot foot";*/
 

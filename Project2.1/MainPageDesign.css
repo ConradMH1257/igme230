@@ -1,43 +1,125 @@
 /*Main format for all the webpages*/
 html{
-    display: grid;
+    
     background-color: #d1c6ad;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5em;
+
     border: 10px solid black;
-    /*efefef*/
+    max-width: 100vw;
+    min-height: 100vh;
+    
 }
+body{
+    margin: 0;
+}
+
 /*Call for the artpage to set stuff to the left*/
 .Art{
     align-items: left;
     background-color: #823200;
 }
-
+#Pic{
+    border: solid black;
+    /*border-radius: 50%;*/
+    margin-left: 150px;
+}
+#Pic2{
+    border: solid black;
+    /*border-radius: 50%;*/
+    margin-left: 50px;
+}
 /*ArtPage CSS*/
+/*Set is the text*/
 .seto, .sett, .setth, .setf, .setfi{
     display: flex;
     justify-content: center;
     word-wrap: break-word;
     background-color: #98AFC7;
-    box-align: center;
-    
+    box-align: center; 
+    padding-left: 200px;
+    padding-right: 200px; 
+    margin-left: 200px; 
+    margin-right: 200px; 
+    border: 1px solid black;
 }
-/*MainPage CSS*/
+.artsub{
+    display: grid;
+    justify-content: center; 
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+#ArtGrid{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center; 
+    margin:0;
+    padding:0;
 
+    grid-template-columns: 2fr, 2fr;
+    grid-template-rows: 200px, 1fr, 2fr;
+}
+
+/*MainPage CSS*/
 /*Looked at w3schools to get a reminder for the code*/
 /*MainPage CSS for the picture*/
-.Conrad{
-    
+.Conrad{    
     border: solid black;
     border-radius: 50%;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+/*Got the Code from w3Schools*/
+.Mainpg{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;    
+}
+.Wraps{
+    display: grid;
+    justify-items: center;
+    padding: 0;
+    grid-template-columns: 1fr, 2fr, 1fr;
+    grid-template-rows: 200px, 1fr, 2fr, 1fr;
+}
+#head{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-/*Got the Code from w3Schools*/
+/*Code Page CSS*/
+#codewrap{
+    display:grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center; 
+    margin:0;
+    padding:0;
+
+    grid-template-columns: 2fr, 2fr;
+    grid-template-rows: 200px, 1fr, 2fr;
+}
+.codebody{
+    display: grid;
+    margin: 0;
+    margin-left: 250px;
+}
+#link{
+    margin:0;
+}
+
+/************************/
+/*page one*/
 .Nav{
     display: grid;
     background-color: black;
-    margin-left: 600px;
-    margin-right: 600px;
+    margin-left: 500px;
+    margin-right: 500px;    
     
 }
 .Nav a{
@@ -49,32 +131,19 @@ html{
     text-decoration: none;
 }
 .Nav a:hover{
-    background-color: #bb4430;
+    background-color: #7a9e9f;
 }
-.Mainpg{
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    
-}
-
-
-
-
 /************************/
-
+/*Page two*/
 .Nav2{
     display: grid;
     background-color: black;
-    margin-left: 600px;
-    margin-right: 600px;
-    
+    margin-left: 500px;
+    margin-right: 500px;    
 }
 .Nav2 a{
     display: grid;
     justify-content: center;
-    float: left;
     font-size: 24px;
     color: white;
     text-align: center;
@@ -82,18 +151,21 @@ html{
     text-decoration: none;
 }
 .Nav2 a:hover{
-    background-color: #bb4430;
+    background-color: #7a9e9f;
 }
-
+/************************/
+/*Page three*/
 .Nav3{
     display: grid;
     background-color: black;
-    margin-left: 600px;
-    margin-right: 600px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 0;
+    margin-bottom: 0;
     
 }
 .Nav3 a{
-    float: left;
+    display: grid;
     font-size: 24px;
     color: white;
     text-align: center;
@@ -101,37 +173,50 @@ html{
     text-decoration: none;
 }
 .Nav3 a:hover{
-    background-color: #bb4430;
+    background-color: #7a9e9f;
 }
-
+/************************/
+/*Page four*/
 .Nav4{
-    display: grid;
-    
+    display: grid;    
     background-color: black;
-    margin-left: 600px;
-    margin-right: 600px;
+    margin-left: 500px;
+    margin-right: 500px;
     
 }
 .Nav4 a{
     display: grid;
     justify-content: center;
-    float: left;
     font-size: 24px;
     color: white;
     padding: 14px 24px;
     
 }
 .Nav4 a:hover{
-    background-color: #bb4430;
+    background-color: #7a9e9f;
 }
 
-
+.menu{
+    display: grid;
+    justify-content: center;
+    background-color: white;  
+    margin: 0;
+    padding: 0;
+}
+.items{
+    display: grid;
+    justify-content: center;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
 
 
 
 /*About me and Resume*/
 .reback{
-    background-color: #98AFC7; 
+    background-color: rgb(252, 252, 252); 
+    border: 1px solid black;
 }
 /*Link from the project wbesite that Lawley gave*/
 @page{

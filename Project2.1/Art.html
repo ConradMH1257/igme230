@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="MainPageDesign.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Art Page</title>
 </head>
 <!--Need to get Icons of the programs I used-->
 <!--Hard to see -->
-<body>
+<body class = "ArtGrid">
     <!--Head Text to let user know what page they are on-->
-    <header class = " ArtPageMainHeader" >
+    <header class = "ArtPageMainHeader" >
         <h1>Art & Animations</h1>
         <div class="Nav2">
-                <a href="MainPage.html">Home</a>
-                <a href="AboutMePage.html">About Me & Resume</a>
-                <a href="Coding.html">Coding</a>
+                <p class ="menu">Menu</p>
+                <ul class="items">
+                    <a href="MainPage.html">Home</a>
+                    <a href="AboutMePage.html">About Me & Resume</a>
+                    <a href="Coding.html">Coding</a>
+                </ul>
             </div>
     </header>
     <!--Subheading Code-->
@@ -30,37 +34,39 @@
         <!--errors with %-->
         <div class ="ArtPhotos">
             
-            <img src="HDhallway720.png" style"width:25%; height:25%;" alt="3DS Max">
-            <img src="Hall.jpg" style"width:25%; height:25%;" alt="Hall">
-            <h3>Hallway</h3>
-            <p class="seto">The work above is a hallway from the game Halo Combat Evolved. I used 3Ds Max to create the hallway with a two week period to start, modify, and finish it. The textures
-                for the hallway are all given by 3ds max.
+            <img id="Pic" src="HDhallway720.png" style"width:25%; height:25%;" alt="3DS Max">
+            <img id="Pic" src="Hall.jpg" style"width:25%; height:25%;" alt="Hall">
+            <h3 class = "artsub">Hallway</h3>
+            <p class="seto">The work above is a hallway from the game Halo Combat Evolved. I used 3Ds Max to create the hallway with a two week period to plan, modify, and finish it. The textures
+                for the hallway are all given by 3ds max. This was my first time using a program like 3Ds Max and had never used a model program before.
             </p>
 
-            <img src="Animation.PNG" style"width:50%; height:50%;" alt="Game Character">
-            <h3>Character Design</h3>
+            <img id="Pic" src="Animation.PNG" style"width:50%; height:50%;" alt="Game Character">
+            <h3 class = "artsub">Character Design</h3>
             <p class="sett">The photo above is one of eight different characters I had made for a capstone. The program used is Blender and character here is made with a program that I downloaded with Blender. I then attempted to 
-                use a another program that uses the Xbox One Kinect for motion capture.
+                use a another program that uses the Xbox One Kinect for motion capture. The character is for a capstone game that I made with my friends. The games theme is like clue and 
+                with eight players in one match.
             </p>
 
-            <img src="Body work.JPG" style"width:37%; height:37%;" alt="3DS Max">
-            <img src="BodyFinal.PNG" style"width:33%; height:33%;" alt="3DS Max">
-            <h3>Modeling</h3>
+            <img id="Pic" src="Body work.JPG" style"width:37%; height:37%;" alt="3DS Max">
+            <img id="Pic" src="BodyFinal.PNG" style"width:33%; height:33%;" alt="3DS Max">
+            <h3 class = "artsub">Modeling</h3>
             <p class="setth">
                 The two photos above are maded on 3ds max. I was working on this model along with the hallway but due to time I could not get the model detailed, rigged or textured.
+                The first image is the same project. I had planned to put a character into the scene and animate the character to do a pose.
             </p>
 
-            <img src="Tree.PNG" style"width:50%; height:50%;" alt="Blender Tree">
-            <h3>More Blender Work</h3>
+            <img id="Pic" src="Tree.PNG" style"width:50%; height:50%;" alt="Blender Tree">
+            <h3 class = "artsub">More Blender Work</h3>
             <p class="setf">More work from blender. This is from the addon sapling and can generate trees of any kind for your use.</p>
 
-            <img src="GameDemo.PNG" style"width:50%; height:50%;" alt="Algo game">
-            <h3>Unity</h3>
+            <img id="Pic2" src="GameDemo.PNG" style"width:25%; height:25%;" alt="Algo game">
+            <h3 class = "artsub">Unity</h3>
             <p class="setfi">The image above is from a small game demo I made for Finger lakes community college. The class wanted an enviroment and a character to show off our skills that we learned from
                 the lessons we learned from my class.
             </p>
-
         </div>
     </main>
+    <script src="JavaCode.js"></script>
 </body>
 </html>

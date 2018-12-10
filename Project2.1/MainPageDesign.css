@@ -16,7 +16,6 @@ body{
 
 /*Call for the artpage to set stuff to the left*/
 .Art{
-    align-items: left;
     background-color: #823200;
 }
 #Pic{
@@ -36,7 +35,6 @@ body{
     justify-content: center;
     word-wrap: break-word;
     background-color: #98AFC7;
-    box-align: center; 
     padding-left: 200px;
     padding-right: 200px; 
     margin-left: 200px; 
@@ -58,8 +56,8 @@ body{
     margin:0;
     padding:0;
 
-    grid-template-columns: 2fr, 2fr;
-    grid-template-rows: 200px, 1fr, 2fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 200px 1fr 2fr;
 }
 
 /*MainPage CSS*/
@@ -82,8 +80,8 @@ body{
     display: grid;
     justify-items: center;
     padding: 0;
-    grid-template-columns: 1fr, 2fr, 1fr;
-    grid-template-rows: 200px, 1fr, 2fr, 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px 1fr 2fr 1fr;
 }
 #head{
     display: grid;
@@ -101,8 +99,8 @@ body{
     margin:0;
     padding:0;
 
-    grid-template-columns: 2fr, 2fr;
-    grid-template-rows: 200px, 1fr, 2fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 200px 1fr 2fr;
 }
 .codebody{
     display: grid;
@@ -222,6 +220,48 @@ body{
 @page{
     size: 5.5in
     8.5in;
+}
+@media screen and (max-width: 320px){
+    .Conrad{    
+        border: solid black;
+        border-radius: 50%;
+        margin-left: 35%;
+        margin-top: 10px;
+    }
+    /*Got the Code from w3Schools*/
+    .Mainpg{
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;    
+    }
+    .Wraps{
+        display: grid;
+        justify-items: center;
+        padding: 0;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 200px 1fr 2fr 1fr;
+    }
+    #head{
+        display: grid;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .menu{
+        display: grid;
+        justify-content: center;
+        background-color: white;  
+        margin: 0;
+        padding: 0;
+    }
+    .items{
+        display: grid;
+        justify-content: center;
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 /* Wanted to have the animated buttons but did not have time to add it to my page
